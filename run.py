@@ -1,7 +1,7 @@
 import yt_dlp
 import os
 
-def download_youtube_as_mp3(url, output_path="."):
+def download_youtube_as_mp3(url, output_path="music/"):
     try:
         os.makedirs(output_path, exist_ok=True)
         
