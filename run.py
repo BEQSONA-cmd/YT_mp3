@@ -4,7 +4,7 @@ import os
 def download_youtube_as_mp3(url, output_path="music/"):
     try:
         os.makedirs(output_path, exist_ok=True)
-        
+
         ydl_opts = {
             'format': 'bestaudio/best',
             'postprocessors': [{
@@ -28,5 +28,5 @@ def download_youtube_as_mp3(url, output_path="music/"):
         return None
 
 # Example usage
-video_url = "https://www.youtube.com/watch?v=qU9mHegkTc4&list=RDGMEM6ijAnFTG9nX1G-kbWBUCJAVMqU9mHegkTc4&start_radio=1"
+video_url = "https://www.youtube.com/watch?v=J42wXiRIauI"
 download_youtube_as_mp3(video_url)
